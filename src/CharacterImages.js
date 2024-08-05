@@ -15,7 +15,7 @@ import aam7 from './chars/aam7.png';
 import aww1 from './chars/aaw1.png';
 import aww10 from './chars/aaw10.png';
 import aww11 from './chars/aaw11.png';
-import aww12 from './chars/aaw12.png';
+
 import aww2 from './chars/aaw2.png';
 import aww3 from './chars/aaw3.png';
 import aww4 from './chars/aaw4.png';
