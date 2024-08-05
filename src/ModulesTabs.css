@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Futurism';
+    src: url('./futurism.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    font-family: 'Futurism', sans-serif;
+    font-size: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(5, 4, 4);
+    padding: 300px 0;
+    margin: 0;
+    position: relative;
+    background-image: url('./bgnew4.jpg'); /* Add background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.tabs {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 100px;
+    cursor: pointer;
+    font-size: 20px !important; /* Ensure this size is applied */
+    color: rgba(233, 230, 230, 0.673) !important; /* Set the default color for tabs */
+}
+
+.tab:hover {
+    font-size: 22px !important; /* Ensure this size is applied */
+    background-color: rgba(0, 53, 131, 0.947);
+    color: rgb(255, 255, 255) !important;
+}

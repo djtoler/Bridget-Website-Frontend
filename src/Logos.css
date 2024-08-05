@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Futurism';
+    src: url('./futurism.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .hstack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px; /* Space between each image card */
+    padding: 20px;
+    max-width: 1200px; /* Increase max width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px; /* Increase the width as needed */
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .image-card img {
+    width: 100%;
+    max-width: 800px; /* Increase the max width as needed */
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .image-label {
+    margin-top: 10px;
+    font-family: 'Futurism', sans-serif;
+    font-size: 24px; /* Increase the font size as needed */
+    color: white; /* Adjust the color as needed */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .image-card {
+      max-width: 150px; /* Adjust the width for smaller screens */
+    }
+  
+    .image-card img {
+      max-width: 150px; /* Adjust the max width for smaller screens */
+    }
+  
+    .image-label {
+      font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+  }
+  

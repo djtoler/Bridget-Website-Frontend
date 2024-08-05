@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Futurism';
+    src: url('./futurism.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.about-container-c {
+    background-image: url('bgnew2.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-container-c h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.about-container-c p {
+    font-size: 1.5em;
+    width: 80%;
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input {
+    height: 40px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3700b3;
+}
+
+.bridget-image-contact {
+    width: 130px; /* Adjust logo size for smaller screens */
+    margin-bottom: 20px;
+  }
+
+.contact-us {
+    font-family: 'Futurism', sans-serif;
+    font-size: 158px;
+    color: rgb(160, 99, 99);
+    text-shadow: 2px 2px 4px rgba(251, 249, 249, 0.5);
+}

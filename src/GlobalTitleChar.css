@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'moonbold';
+    src: url('moonlight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futurism';
+    src: url('./futurism.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.overlay-container-modules-char {
+    display: flex;
+    flex-direction: column;  /* Change to column to stack title and line vertically */
+    align-items: center;
+    color: rgba(0, 0, 0, 0.729);
+    padding: 10px;
+    width: 100%;
+}
+
+.container-modules-char {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;  /* Center align title and image */
+}
+
+.title-modules-char {
+    font-family: 'Futurism', sans-serif;
+    font-size: 158px;
+    color: rgba(0, 0, 0, 0.729);
+    text-shadow: 2px 2px 4px rgba(251, 249, 249, 0.5);
+    margin-left: -20%;
+    margin-top: -350px;
+    position: relative;
+}
+
+.overlay-image-modules-char {
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    transition: transform 0.5s ease-in-out;
+    animation: float 3s ease-in-out infinite;
+}
+
+.line-under-title-char {
+    width: 62%;
+    height: 0.2px;
+    background-color: rgb(97, 85, 85);
+    margin: 0 auto;
+    margin-top: -80px; 
+    margin-right: 420px;
+}
+

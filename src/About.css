@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Futurism';
+  src: url('./futurism.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CG';
+  src: url('./CG.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about-container {
+  background-image: url('bgnew9.png'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  padding: 120px;
+  font-family: 'Futurism', sans-serif;
+  font-size: 12px;
+  color: rgb(17, 17, 18);
+}
+
+.about-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 100px;
+  border-radius: 10px;
+  width: 100%; /* Cut the width to half */
+  max-width: 950px; /* Ensure it doesn't get too wide on larger screens */
+  text-align: center;
+  opacity: 95%;
+  /* background-image: url('bgnew14.jpg'); */
+  background-size: cover;
+  background-position: center;
+  opacity: 89%;
+}
+
+.about-content h1 {
+  /* font-size: 3em; */
+  /* margin-bottom: 20px; */
+  font-family: 'Futurism', sans-serif;
+  font-size: 120px;
+  color: rgba(12, 12, 12, 0.871);
+}
+
+.about-content p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  font-family: 'CG', sans-serif;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'CG', sans-serif;
+  font-size: 40px;
+  color: rgba(222, 222, 222, 0.871);
+}
+
+.carousel-item h4 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-family: 'CG', sans-serif;
+}
+
+.carousel-video {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.carousel .slide {
+  background: none;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+      justify-content: center; /* Center the content */
+      padding: 60px;
+  }
+
+  .about-content {
+      padding: 50px;
+      width: 90%; /* Adjust width for smaller screens */
+      max-width: 700px; /* Adjust max width for smaller screens */
+  }
+
+  .about-content h1 {
+      font-size: 60px; /* Adjust title size for smaller screens */
+  }
+
+  .about-content p {
+      font-size: 1.2em; /* Adjust text size for smaller screens */
+  }
+
+  .carousel-item h2 {
+      font-size: 1.5em; /* Adjust subtitle size for smaller screens */
+  }
+
+  .carousel-item h4 {
+      font-size: 1em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+.bridget-image {
+  width: 130px; /* Adjust logo size for smaller screens */
+}
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+  .about-container {
+    padding: 80px;
+  }
+
+  .about-content {
+    padding: 35px; /* Adjust padding for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 900px; /* Adjust max width for smaller screens */
+    max-height: 90vh; /* Ensure the content box fits within the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .title-container {
+    flex-direction: row;
+  }
+
+  .about-content h1 {
+    font-size: 50px; /* Adjust title size for smaller screens */
+    margin-right: 15px; /* Remove margin for smaller screens */
+    margin-bottom: 15px; /* Add margin below the title */
+  }
+
+  .bridget-image {
+    width: 40px; /* Adjust logo size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1.4em; /* Adjust text size for smaller screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.8em; /* Adjust subtitle size for smaller screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 1.1em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-container {
+    padding: 70px;
+  }
+
+  .about-content {
+    padding: 30px; /* Adjust padding for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 800px; /* Adjust max width for smaller screens */
+    max-height: 90vh; /* Ensure the content box fits within the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .title-container {
+    flex-direction: row;
+  }
+
+  .about-content h1 {
+    font-size: 45px; /* Adjust title size for smaller screens */
+    margin-right: 10px; /* Remove margin for smaller screens */
+    margin-bottom: 10px; /* Add margin below the title */
+  }
+
+  .bridget-image {
+    width: 35px; /* Adjust logo size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1.3em; /* Adjust text size for smaller screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.6em; /* Adjust subtitle size for smaller screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 1em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+/* Small desktops and large tablets */
+@media (max-width: 768px) {
+  .about-container {
+    justify-content: center; /* Center the content */
+    padding: 60px;
+  }
+
+  .about-content {
+    padding: 30px; /* Adjust padding for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 700px; /* Adjust max width for smaller screens */
+    max-height: 90vh; /* Ensure the content box fits within the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .about-content h1 {
+    font-size: 40px; /* Adjust title size for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-bottom: 20px; /* Add margin below the title */
+  }
+
+  .bridget-image {
+    width: 30px; /* Adjust logo size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1.2em; /* Adjust text size for smaller screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.5em; /* Adjust subtitle size for smaller screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 1em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+/* Small tablets and large smartphones */
+@media (max-width: 600px) {
+  .about-container {
+    padding: 50px;
+  }
+
+  .about-content {
+    padding: 25px; /* Adjust padding for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 600px; /* Adjust max width for smaller screens */
+    max-height: 90vh; /* Ensure the content box fits within the viewport */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .about-content h1 {
+    font-size: 35px; /* Adjust title size for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-bottom: 15px; /* Add margin below the title */
+  }
+
+  .bridget-image {
+    width: 25px; /* Adjust logo size for smaller screens */
+  }
+
+  .about-content p {
+    font-size: 1.1em; /* Adjust text size for smaller screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.4em; /* Adjust subtitle size for smaller screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 0.9em; /* Adjust subtitle size for smaller screens */
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 30px;
+  }
+
+  .about-content {
+    padding: 20px; /* Further adjust padding for very small screens */
+    width: 100%;
+    max-width: 100%;
+    max-height: 80vh; /* Further adjust height for very small screens */
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .about-content h1 {
+    font-size: 30px; /* Further adjust title size for very small screens */
+  }
+
+  .bridget-image {
+    width: 20px; /* Further adjust logo size for very small screens */
+  }
+
+  .about-content p {
+    font-size: 1em; /* Further adjust text size for very small screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1.2em; /* Further adjust subtitle size for very small screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 0.9em; /* Further adjust subtitle size for very small screens */
+  }
+}
+
+/* Extra small smartphones */
+@media (max-width: 360px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-content {
+    padding: 15px; /* Further adjust padding for very small screens */
+    width: 100%;
+    max-width: 100%;
+    max-height: 75vh; /* Further adjust height for very small screens */
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .about-content h1 {
+    font-size: 25px; /* Further adjust title size for very small screens */
+  }
+
+  .bridget-image {
+    width: 15px; /* Further adjust logo size for very small screens */
+  }
+
+  .about-content p {
+    font-size: 0.9em; /* Further adjust text size for very small screens */
+  }
+
+  .carousel-item h2 {
+    font-size: 1em; /* Further adjust subtitle size for very small screens */
+  }
+
+  .carousel-item h4 {
+    font-size: 0.8em; /* Further adjust subtitle size for very small screens */
+  }
+}
