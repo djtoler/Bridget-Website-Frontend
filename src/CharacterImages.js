@@ -3,7 +3,7 @@ import { HStack, Image, Link, Box, Text } from '@chakra-ui/react';
 import aam1 from './chars/aam1.png';
 import aam10 from './chars/aam10.png';
 import aam11 from './chars/aam11.png';
-
+import aam12 from './chars/aam12.png';
 import aam13 from './chars/aam13.png';
 import aam14 from './chars/aam14.png';
 import aam2 from './chars/aam2.png';
