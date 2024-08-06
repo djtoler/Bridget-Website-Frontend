@@ -198,17 +198,17 @@
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .title-home {
-        font-size: 75px; /* Further reduced for very small screens */
+        font-size: 75px; 
         margin: 5px 1px 30px 0;
     }
 
     .overlay-image {
-        max-width: 100%; /* Use full width available */
-        max-height: 40%; /* Keep it proportional */
+        max-width: 100%; 
+        max-height: 40%; 
     }
-}
+} */
 
 @media (max-width: 414px) {
   .title-home {
