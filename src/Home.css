@@ -217,7 +217,7 @@
   }
   .overlay-image {
     max-width: 100%; /* Use full width available */
-    max-height: 40%; /* Keep it proportional */
+    max-height: 20%; /* Keep it proportional */
 }
 }
 
