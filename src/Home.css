@@ -135,7 +135,7 @@
 /* Medium and Large Smartphone Adjustments */
 @media (min-width: 361px) {
   .title-home {
-      font-size: 5.5vw; /* Slightly larger for medium screens */
+      font-size: 60px; /* Slightly larger for medium screens */
   }
 
   .overlay-image {
@@ -149,7 +149,7 @@
 
 @media (min-width: 415px) {
   .title-home {
-      font-size: 5vw; /* Larger still for large screens */
+      font-size: 120px; /* Larger still for large screens */
   }
 
   .overlay-image {
