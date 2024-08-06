@@ -1,4 +1,3 @@
-/* General Styles */
 @font-face {
   font-family: 'moonbold';
   src: url('moonlight.otf') format('truetype');
@@ -15,10 +14,10 @@
 
 .overlay-container-home {
   margin: 0;
-  padding: 4vw;  /* Responsive padding */
+  padding: 5vh;  /* Use vh for vertical spacing relative to viewport */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   background-color: rgb(0, 0, 0);
@@ -32,10 +31,11 @@
 
 .title-home {
   font-family: 'Futurism', sans-serif;
+  font-size: 8vw; /* Scale font size based on the width of the viewport */
+  margin: -2vh 1vw 5vh 0; /* Use viewport units for margins */
   color: rgba(113, 114, 131, 0.729);
   text-shadow: 0.1vw 0.1vw 0.5vw rgba(251, 249, 249, 0.5);
   transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
-  margin: 1vw 1vw 3vw 1vw;
 }
 
 .title-home:hover {
@@ -45,19 +45,21 @@
 
 .container-home {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100%;  /* Full width */
+  height: 100%; /* Full height */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .overlay-image {
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 50%;
   transform: translateX(-50%);
+  max-width: 50vw;
+  max-height: 50vh;
   padding: 2vw;
   transition: left 0.5s ease-in-out;
   z-index: 999;
@@ -79,8 +81,9 @@
   top: 30vh;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 50vw; /* 50% of viewport width */
   z-index: 1000;
-  border-radius: 1vw;
+  border-radius: 1vw; /* Dynamic rounding */
   transition: opacity 3s ease-in-out, transform 3s ease-in-out;
   opacity: 0; /* Initial state: invisible */
 }
@@ -90,6 +93,8 @@
 }
 
 .carousel-container img {
+  max-width: 80vw;
+  max-height: 75vh;
   object-fit: contain;
   border-radius: 1vw;
   box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
@@ -120,61 +125,9 @@
 
 @keyframes float {
   0%, 100% {
-    transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   }
   50% {
-    transform: translate(-50%, -53%);
-  }
-}
-
-/* Large TV Screen */
-@media (min-width: 1200px) {
-  .title-home {
-    font-size: 80px;
-  }
-  .overlay-image {
-    max-width: 50vw;
-  }
-  .carousel-container {
-    width: 40vw;
-  }
-}
-
-/* Laptop */
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .title-home {
-    font-size: 70px;
-  }
-  .overlay-image {
-    max-width: 60vw;
-  }
-  .carousel-container {
-    width: 50vw;
-  }
-}
-
-/* Large Phone */
-@media (min-width: 415px) and (max-width: 1023px) {
-  .title-home {
-    font-size: 50px;
-  }
-  .overlay-image {
-    max-width: 70vw;
-  }
-  .carousel-container {
-    width: 60vw;
-  }
-}
-
-/* Small Phone */
-@media (max-width: 414px) {
-  .title-home {
-    font-size: 40px;
-  }
-  .overlay-image {
-    max-width: 75vw;
-  }
-  .carousel-container {
-    width: 70vw;
+      transform: translate(-50%, -53%);
   }
 }
