@@ -149,7 +149,7 @@
 
 @media (min-width: 415px) {
   .title-home {
-      font-size: 120px; /* Larger still for large screens */
+      font-size: 60px; /* Larger still for large screens */
   }
 
   .overlay-image {
