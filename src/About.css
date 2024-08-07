@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'space';
+  src: url('./space.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CG';
   src: url('./CG.otf') format('opentype');
   font-weight: normal;
@@ -21,15 +28,16 @@
   display: flex;
   justify-content: flex-start; /* Align to the left */
   align-items: center;
-  padding: 120px;
+  padding: 160px 120px 120px 120px; /* Increase top and bottom padding */
   font-family: 'Futurism', sans-serif;
   font-size: 12px;
   color: rgb(17, 17, 18);
 }
 
+
 .about-content {
   background: rgba(0, 0, 0, 0.6);
-  padding: 100px;
+  padding: 10px;
   border-radius: 10px;
   width: 100%; /* Cut the width to half */
   max-width: 950px; /* Ensure it doesn't get too wide on larger screens */
@@ -39,20 +47,64 @@
   background-size: cover;
   background-position: center;
   opacity: 89%;
+  box-shadow: 0 0 120px 20px rgba(255, 255, 255, 0.99); /* Add glow effect */
+  backdrop-filter: blur(10px); /* Add blur effect */
 }
 
+.bordered-section {
+  border: 1px solid rgb(255, 255, 255); /* Add border */
+  padding: 20px; /* Adjust padding for inner spacing */
+  margin: 20px 0 40px 0; /* Adjust margin to provide spacing around the bordered section */
+  transform: translateY(-20px); /* Move up by 20px */
+  /* background-image: url('bgnew17.JPG'); */
+  background-color: rgb(0, 0, 0); /* Add semi-transparent background color */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the background image */
+  border-radius: 15px; /* Round the borders */
+  box-shadow: 0 0 15px rgba(255, 221, 0, 0.5); /* Add glow effect */
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+
 .about-content h1 {
-  /* font-size: 3em; */
-  /* margin-bottom: 20px; */
   font-family: 'Futurism', sans-serif;
   font-size: 120px;
   color: rgba(12, 12, 12, 0.871);
+  margin-bottom: -20px;
+  color: rgba(0, 0, 0, 0.581);
+  text-shadow: 2px 2px 4px rgba(251, 249, 249, 0.5);
+  transform: scaleY(1.5);
 }
 
 .about-content p {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-  font-family: 'CG', sans-serif;
+  font-size: 37px;
+  /* margin-top: -60px; */
+  font-family: 'futurism', sans-serif;
+  color: rgba(252, 252, 252, 0.965);
+  /* margin-top: 20px; */
+  /* margin-bottom: 10px; */
+  font-weight: bold;
+  /* text-shadow: 0 0 10px rgba(18, 128, 252, 0.8);  */
+  /* font-style: italic; */
+  transform: scaleY(.5);
+}
+
+.features-list {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+  font-family: 'space', sans-serif;
+  color: rgba(255, 255, 255, 0.952); 
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(244, 232, 9, 0.8); 
+}
+
+
+.features-list li {
+  margin-bottom: -10px;
 }
 
 .carousel-item {
@@ -88,149 +140,33 @@
 /* Media Queries for smaller screens */
 @media (max-width: 768px) {
   .about-container {
-      justify-content: center; /* Center the content */
-      padding: 60px;
+    background-image: url('bgnew9.png'); /* Adjust path as needed */
+    background-size: cover; /* Stretch the background image to cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 160px 120px 120px 120px; /* Increase top and bottom padding */
+    font-family: 'Futurism', sans-serif;
+    font-size: 12px;
+    color: rgb(17, 17, 18);
   }
+  
 
   .about-content {
-      padding: 50px;
-      width: 80%; /* Adjust width for smaller screens */
-      max-width: 700px; /* Adjust max width for smaller screens */
+    padding: 50px;
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Ensure it doesn't get too wide on larger screens */
   }
 
   .about-content h1 {
-      font-size: 60px; /* Adjust title size for smaller screens */
+    font-size: 60px; /* Adjust title size for smaller screens */
   }
 
-  .about-content p {
-      font-size: 1.2em; /* Adjust text size for smaller screens */
-  }
-
-  .carousel-item h2 {
-      font-size: 1.5em; /* Adjust subtitle size for smaller screens */
-  }
-
-  .carousel-item h4 {
-      font-size: 1em; /* Adjust subtitle size for smaller screens */
-  }
-}
-
-.bridget-image {
-  width: 130px; /* Adjust logo size for smaller screens */
-}
-
-/* Large desktops and laptops */
-@media (max-width: 1200px) {
-  .about-container {
-    padding: 80px;
-  }
-
-  .about-content {
-    padding: 35px; /* Adjust padding for smaller screens */
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 900px; /* Adjust max width for smaller screens */
-    max-height: 90vh; /* Ensure the content box fits within the viewport */
-    overflow-y: auto; /* Enable scrolling if content overflows */
-  }
-
-  .title-container {
-    flex-direction: row;
-  }
-
-  .about-content h1 {
-    font-size: 50px; /* Adjust title size for smaller screens */
-    margin-right: 15px; /* Remove margin for smaller screens */
-    margin-bottom: 15px; /* Add margin below the title */
-  }
-
-  .bridget-image {
-    width: 40px; /* Adjust logo size for smaller screens */
-  }
-
-  .about-content p {
-    font-size: 1.4em; /* Adjust text size for smaller screens */
-  }
-
-  .carousel-item h2 {
-    font-size: 1.8em; /* Adjust subtitle size for smaller screens */
-  }
-
-  .carousel-item h4 {
-    font-size: 1.1em; /* Adjust subtitle size for smaller screens */
-  }
-}
-
-/* Tablets */
-@media (max-width: 992px) {
-  .about-container {
-    padding: 70px;
-  }
-
-  .about-content {
-    padding: 30px; /* Adjust padding for smaller screens */
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 800px; /* Adjust max width for smaller screens */
-    max-height: 90vh; /* Ensure the content box fits within the viewport */
-    overflow-y: auto; /* Enable scrolling if content overflows */
-  }
-
-  .title-container {
-    flex-direction: row;
-  }
-
-  .about-content h1 {
-    font-size: 45px; /* Adjust title size for smaller screens */
-    margin-right: 10px; /* Remove margin for smaller screens */
-    margin-bottom: 10px; /* Add margin below the title */
-  }
-
-  .bridget-image {
-    width: 35px; /* Adjust logo size for smaller screens */
-  }
-
-  .about-content p {
-    font-size: 1.3em; /* Adjust text size for smaller screens */
-  }
-
-  .carousel-item h2 {
-    font-size: 1.6em; /* Adjust subtitle size for smaller screens */
-  }
-
-  .carousel-item h4 {
-    font-size: 1em; /* Adjust subtitle size for smaller screens */
-  }
-}
-
-/* Small desktops and large tablets */
-@media (max-width: 768px) {
-  .about-container {
-    justify-content: center; /* Center the content */
-    padding: 60px;
-  }
-
-  .about-content {
-    padding: 30px; /* Adjust padding for smaller screens */
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 700px; /* Adjust max width for smaller screens */
-    max-height: 90vh; /* Ensure the content box fits within the viewport */
-    overflow-y: auto; /* Enable scrolling if content overflows */
-  }
-
-  .title-container {
-    flex-direction: column;
-  }
-
-  .about-content h1 {
-    font-size: 40px; /* Adjust title size for smaller screens */
-    margin-right: 0; /* Remove margin for smaller screens */
-    margin-bottom: 20px; /* Add margin below the title */
-  }
-
-  .bridget-image {
-    width: 30px; /* Adjust logo size for smaller screens */
-  }
-
-  .about-content p {
+  .about-content p,
+  .features-list {
     font-size: 1.2em; /* Adjust text size for smaller screens */
   }
 
@@ -243,119 +179,74 @@
   }
 }
 
-/* Small tablets and large smartphones */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .about-container {
-    padding: 50px;
+    justify-content: center; /* Center the content */
+    
   }
 
   .about-content {
-    padding: 25px; /* Adjust padding for smaller screens */
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: 600px; /* Adjust max width for smaller screens */
-    max-height: 90vh; /* Ensure the content box fits within the viewport */
-    overflow-y: auto; /* Enable scrolling if content overflows */
-  }
-
-  .title-container {
-    flex-direction: column;
+    /* padding: 20px; */
+    max-width: 59%;
+    width: 70%;
+    margin-left: 175px;
+    text-align: center; /* Ensure text is centered */
   }
 
   .about-content h1 {
-    font-size: 35px; /* Adjust title size for smaller screens */
-    margin-right: 0; /* Remove margin for smaller screens */
-    margin-bottom: 15px; /* Add margin below the title */
+    font-size: 40px; /* Adjust title size for smaller screens */
+    margin-bottom: 10px; /* Add margin below title */
+    transform: scaleY(2.5);
   }
 
-  .bridget-image {
-    width: 25px; /* Adjust logo size for smaller screens */
-  }
+  
 
   .about-content p {
-    font-size: 1.1em; /* Adjust text size for smaller screens */
+    font-size: 0.8em; /* Adjust text size for smaller screens */
   }
 
-  .carousel-item h2 {
-    font-size: 1.4em; /* Adjust subtitle size for smaller screens */
+  .features-list {
+    font-size: 0.8em; /* Adjust text size for smaller screens */
+    margin-top: 10px; /* Adjust margin */
   }
 
-  .carousel-item h4 {
-    font-size: 0.9em; /* Adjust subtitle size for smaller screens */
-  }
-}
-
-/* Smartphones */
-@media (max-width: 480px) {
-  .about-container {
-    padding: 30px;
+  .features-list li {
+    margin-bottom: 5px; /* Reduce space between list items */
   }
 
-  .about-content {
-    padding: 20px; /* Further adjust padding for very small screens */
-    width: 100%;
-    max-width: 100%;
-    max-height: 80vh; /* Further adjust height for very small screens */
+  .bordered-section {
+    border: 1px solid rgb(255, 255, 255); /* Add border */
+    padding: 10px; /* Adjust padding for inner spacing */
+    margin: 10px 0 20px 0; /* Adjust margin to provide spacing around the bordered section */
+    transform: translateY(0); /* Remove vertical translation */
+    background-color: rgba(0, 0, 0, 0.8); /* Add semi-transparent background color */
+    border-radius: 10px; /* Round the borders */
+    box-shadow: 0 0 10px rgba(255, 221, 0, 0.5); /* Add glow effect */
   }
 
-  .title-container {
+  .carousel-item {
+    display: flex;
     flex-direction: column;
-  }
-
-  .about-content h1 {
-    font-size: 30px; /* Further adjust title size for very small screens */
-  }
-
-  .bridget-image {
-    width: 20px; /* Further adjust logo size for very small screens */
-  }
-
-  .about-content p {
-    font-size: 1em; /* Further adjust text size for very small screens */
+    align-items: center;
   }
 
   .carousel-item h2 {
-    font-size: 1.2em; /* Further adjust subtitle size for very small screens */
+    font-size: 1.2em; /* Adjust subtitle size for smaller screens */
+    margin-bottom: 5px; /* Adjust margin */
   }
 
   .carousel-item h4 {
-    font-size: 0.9em; /* Further adjust subtitle size for very small screens */
-  }
-}
-
-/* Extra small smartphones */
-@media (max-width: 360px) {
-  .about-container {
-    padding: 20px;
+    font-size: 1em; /* Adjust subtitle size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin */
   }
 
-  .about-content {
-    padding: 15px; /* Further adjust padding for very small screens */
-    width: 100%;
-    max-width: 100%;
-    max-height: 75vh; /* Further adjust height for very small screens */
+  .carousel-video {
+    width: 80%; /* Adjust video width for smaller screens */
+    border: 2px solid white;
+    border-radius: 10px;
   }
 
-  .title-container {
-    flex-direction: column;
-  }
-
-  .about-content h1 {
-    font-size: 25px; /* Further adjust title size for very small screens */
-  }
-
-  .bridget-image {
-    width: 15px; /* Further adjust logo size for very small screens */
-  }
-
-  .about-content p {
-    font-size: 0.9em; /* Further adjust text size for very small screens */
-  }
-
-  .carousel-item h2 {
-    font-size: 1em; /* Further adjust subtitle size for very small screens */
-  }
-
-  .carousel-item h4 {
-    font-size: 0.8em; /* Further adjust subtitle size for very small screens */
+  .carousel .slide {
+    background: none;
   }
 }

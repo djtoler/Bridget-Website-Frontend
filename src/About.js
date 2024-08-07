@@ -23,9 +23,16 @@ const About = () => {
       <div className="about-content-wrapper">
         <div className="about-content">
           <h1>Bridget</h1>
-          <p>
-            Our EdTech app uses the latest technologies like AR/VR and AI to provide an immersive learning experience.
-          </p>
+          <div className="bordered-section">
+            <p>
+              Frustration Free Learning
+            </p>
+            <ul className="features-list">
+              <li>Educational Psychology</li>
+              <li>Augmented & Virtual Reality</li>
+              <li>Artifical Intelligence</li>
+            </ul>
+          </div>
           <Carousel
             showThumbs={false}
             infiniteLoop={true}
