@@ -8,7 +8,7 @@ const GlobalTitleChar = () => {
                 <h1 className="title-modules-char">Bridget</h1>
                 <img src="bridget1.png" alt="Bridget" className="overlay-image-modules-char" />
             </div>
-            <div className="line-under-title-char"></div>
+            {/* <div className="line-under-title-char"></div> */}
         </div>
     );
 };

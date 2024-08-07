@@ -92,3 +92,25 @@
     color: rgb(160, 99, 99);
     text-shadow: 2px 2px 4px rgba(251, 249, 249, 0.5);
 }
+
+
+@media (max-width: 768px) {
+    .about-container-c {
+        background-image: url('bgnew2.webp');
+        background-size: 100% 100%; /* Stretch the image to cover both width and height */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image within the container */
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Orbitron', sans-serif;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+

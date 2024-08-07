@@ -163,12 +163,44 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-size: cover; /* Make the background image slimmer */
+        background-position: center center; /* Center the background image */
+        background-attachment: fixed; /* Fix the background image in place */
+    }
+
+    .carousel-container {
+        top: -10%; /* Centralize vertically */
+        left: 45%; /* Centralize horizontally */
+        transform: translate(-50%, -50%); /* Adjust transformation to center */
+        width: 90%; /* Make it wider to use more space */
+        opacity: 1; /* Make it always visible */
+        position: relative;
+        border-radius: 15px; /* Round the corners */
+        transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+    }
+
+    .carousel-container img {
+        max-width: 400px; /* Smaller image width for 768px view */
+        max-height: 450px; /* Smaller image height for 768px view */
+        object-fit: contain; /* Maintain aspect ratio */
+        border-radius: 15px; /* Round the corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Add box shadow */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.5s ease-in-out;
+        position: relative;
+    }
+
+    .carousel-container img:hover {
+        transform: scale(1.05); /* Slightly enlarge the image on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
     }
 
     .title-home {
-        font-size: 48px; /* Adjusted for smaller screens */
-        margin: 10px 2px 50px 0; /* Reduced margin */
+        font-size: 68px; /* Adjusted for smaller screens */
+        margin: 100px 2px 150px 0; /* Reduced margin */
         text-shadow: 1px 1px 5px rgba(251, 249, 249, 0.5);
+        display: inline-block; /* Ensure the transform property works properly */
+        transform: scaleY(1.8); /* Make the font taller */
+        transform-origin: center;
     }
 
     .container-home {
@@ -178,15 +210,7 @@
     .overlay-image {
         top: 20%; /* Adjusted for better visibility */
         max-width: 90%; /* Increased to use more of the screen */
-        max-height: 50%; /* Adjusted to not overlap too much */
-    }
-
-    .carousel-container {
-        top: 50%; /* Centralize vertically */
-        left: 50%; /* Centralize horizontally */
-        transform: translate(-50%, -50%); /* Adjust transformation to center */
-        width: 90%; /* Make it wider to use more space */
-        opacity: 1; /* Make it always visible */
+        max-height: 80%; /* Adjusted to not overlap too much */
     }
 
     .react-multiple-carousel__arrow--left {
@@ -197,6 +221,7 @@
         right: 5px; /* Closer to the edge */
     }
 }
+
 
 /* @media (max-width: 480px) {
     .title-home {
@@ -215,7 +240,7 @@
     font-size: 70px;
     margin: 5px 1px 30px 0;
     display: inline-block; /* Ensure the transform property works properly */
-    transform: scaleY(1.5); /* Make the font taller */
+    transform: scaleY(1.3); /* Make the font taller */
     transform-origin: center;
   }
   .overlay-image {

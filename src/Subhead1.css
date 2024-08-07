@@ -14,26 +14,41 @@
     margin: 0; 
     white-space: nowrap;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 648px; /* Adjust padding as needed */
+    padding-top: 25px;
+    padding-bottom: 618px; /* Adjust padding as needed */
     z-index: 998; /* Ensure it stays above background but below the image */
     margin-top: 0; /* Remove margin-top to ensure fixed positioning */
 }
 
 .futurism-font {
     font-family: 'Futurism', sans-serif;
-    font-size: 30px;
-    color: #171c22;
+    font-size: 25px;
+    color: #334b67;
     text-shadow: 0 0 10px rgba(23, 28, 34, 0.5), 0 0 20px rgba(23, 28, 34, 0.4); /* Add glow effect */
     box-shadow: 0 0 10px rgba(23, 28, 34, 0.5); 
 }
 
 /* Media query to allow text wrapping on smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 678px) {
     .title-container {
         white-space: normal;
     }
     .futurism-font {
-        font-size: 28px; /* Adjust font size as needed for smaller screens */
+        font-size: 16px; /* Adjust font size as needed for smaller screens */
+        color: #334b67;
+    }
+    .title-container {
+        text-align: center;
+        position: fixed; 
+        bottom: 26%; /* Stick to the bottom of the viewport */
+        left: 50%;
+        transform: translateX(-50%); 
+        margin: 0; 
+        white-space: nowrap;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 468px; /* Adjust padding as needed */
+        z-index: 998; /* Ensure it stays above background but below the image */
+        margin-top: 0; /* Remove margin-top to ensure fixed positioning */
     }
 }

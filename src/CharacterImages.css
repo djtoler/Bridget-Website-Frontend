@@ -47,16 +47,49 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hstack-container-char {
+    gap: 40px; /* Reduce space between each image card for smaller screens */
+  }
+
   .image-card-char {
-    max-width: 150px; /* Adjust the width for smaller screens */
+    max-width: 45%; /* Adjust the width for smaller screens */
+    margin: 5px; /* Reduce margin for smaller screens */
   }
 
   .image-card-char img {
-    width: 150px; /* Adjust the width for smaller screens */
-    height: 150px; /* Adjust the height for smaller screens */
+    width: 100%; /* Adjust the width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .image-label-char {
     font-size: 18px; /* Adjust the font size for smaller screens */
   }
+
+  .hstack-container-char {
+    gap: 10px; /* Reduce space between each image card for smaller screens */
+  }
+
+  .image-card-char {
+    max-width: 20%; /* Adjust the width for smaller screens */
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .image-card-char img {
+    width: 100px; /* Adjust the width for smaller screens */
+    height: 100px; /* Adjust the height for smaller screens */
+  }
+
+  .image-label-char {
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+
+  .image-label-char {
+    margin-top: 10px;
+    font-family: 'Futurism', sans-serif;
+    font-size: 11px; /* Increase the font size as needed */
+    color: white; /* Adjust the color as needed */
+  }
 }
+
+
+
